@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import './NewSong.css'
 
+
 class NewSong extends Component {
     constructor(props){
         super(props)
@@ -10,7 +11,7 @@ class NewSong extends Component {
                 album: '',
                 artist: '',
                 genre: '',
-                releaseDate: '',
+                release_date: '',
             }
         }
 
@@ -27,19 +28,19 @@ class NewSong extends Component {
     
     render() {
         return (
-            <div className="form">
+            <div className="formCreate">
                 <form onSubmit={this.handleSubmit}>
                     <label>Song Title:</label>
-                    <input name='title' onChange={this.handleChange} value={this.state.title}/>
+                    <input type="text" name='title' onChange={this.handleChange} value={this.state.title}/>
                     <label>Album:</label>
-                    <input name='album' onChange={this.handleChange} value={this.state.album}/>
+                    <input type="text" name='album' onChange={this.handleChange} value={this.state.album}/>
                     <label>Artist:</label>
-                    <input name='artist' onChange={this.handleChange} value={this.state.artist}/>
+                    <input type="text" name='artist' onChange={this.handleChange} value={this.state.artist}/>
                     <label>Genre:</label>
-                    <input name='genre' onChange={this.handleChange} value={this.state.genre}/>
+                    <input type="text" name='genre' onChange={this.handleChange} value={this.state.genre}/>
                     <label>Release Date:</label>
-                    <input name='releaseDate' onChange={this.handleChange} value={this.state.releaseDate}/>
-                    <button type="submit">Create Song</button>
+                    <input type="text" name='release_date' onChange={this.handleChange} value={this.state.release_date}/>
+                    <button className="button" type="submit">Create Song</button>
                 </form>
             </div>
         )

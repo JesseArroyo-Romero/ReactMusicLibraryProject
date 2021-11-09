@@ -1,0 +1,7 @@
+
+table, td, th, tr {
+    border: 1px solid black;
+    text-align: center;
+    background-color: blue;
+    color: burlywood;
+}

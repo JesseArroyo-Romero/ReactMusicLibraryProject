@@ -1,0 +1,22 @@
+.col-sm-4 {
+    float: left;
+    top: 5%;
+}
+
+.col-lg-4 {
+    position: absolute;
+    top: 5%;
+    left: 30%;
+}
+
+.col-md-4 {
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    width: 100%;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    margin: 8px 0;
+}
+
+
